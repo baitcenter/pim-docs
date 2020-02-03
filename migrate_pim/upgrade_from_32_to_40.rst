@@ -364,4 +364,4 @@ You have to declare it in a new registry as well in the dependency injection con
 
 In the first method, `createByCheckingData`, the data type should be checked. For example, it checks that an expected scalar is indeed a scalar. This is done to guarantee that data manipulated in the domain layer is correct. This method is useful when data is coming from the outside world (product save in UI, API, import, etc). This validation is costly as soon as you have several hundreds values per product.
 
-That's why we implemented a second method to avoid to do these checks. It should be used when a value collection is created from values coming from the database, as the data is already validated and consistent in Mysql. It avoid to pay the performance penalty of checking types.
+That's why we implemented a second method to avoid to do these checks. It should be used when a value collection is created from values coming from the database, as the data is already validated and consistent in Mysql. It avoids to pay the performance penalty for checking types.
