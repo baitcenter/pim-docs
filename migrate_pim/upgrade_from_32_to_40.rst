@@ -233,7 +233,7 @@ Re-write value factories for custom attribute types
 ---------------------------------------------------
 
 A product or a product model contains a value collection. This value collection contains several values of several types (text, number, etc).
-For performance reason, we re-implemented these value factories. If you developed a custom attribute type, you have to rewrite the value factory.
+For performance reasons, we re-implemented the factories which create those values. If you developed a custom attribute type, you have to rewrite the related value factory.
 
 Let's take an example of implementation of a Range Value, which contains two numbers: a minimum number and a maximum number.
 
